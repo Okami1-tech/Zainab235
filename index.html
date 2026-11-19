@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#100b20">
+<title>For Sarauniya ta 💜</title>
+<style>
+:root{--bg:#100b20;--plum:#29143f;--violet:#a875ff;--pink:#ff9ecb;--gold:#f3d59b;--cream:#fff4f0}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:Georgia,"Times New Roman",serif;background:var(--bg);color:var(--cream)}
+body{overflow-x:hidden;background:radial-gradient(ellipse at 50% 15%,#3a1e55 0%,#1b1030 42%,#0b0915 100%);min-height:100svh}
+#stars{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.star{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff2d9;opacity:.6;animation:twinkle 3s ease-in-out infinite alternate}
+@keyframes twinkle{to{opacity:.12;transform:scale(.45)}}
+main{position:relative;z-index:1;min-height:100svh;display:flex;align-items:center;justify-content:center;padding:25px 17px}
+.page{display:none;width:min(100%,520px);min-height:min(760px,calc(100svh - 50px));padding:34px 25px 28px;border:1px solid #c69cff38;border-radius:28px;background:linear-gradient(155deg,#29183bd9,#120e21ed 70%);box-shadow:0 24px 80px #0008,inset 0 1px #ffffff16;position:relative;overflow:hidden;text-align:center}
+.page.active{display:flex;flex-direction:column;align-items:center;justify-content:center;animation:appear .7s ease both}
+@keyframes appear{from{opacity:0;transform:translateY(12px) scale(.985)}to{opacity:1;transform:none}}
+.eyebrow{font:600 10px/1.5 Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;color:var(--gold);opacity:.9}
+h1{font-size:clamp(34px,9vw,53px);line-height:1.06;font-weight:normal;margin:17px 0;color:#fff1f7}
+h2{font-size:clamp(27px,7vw,38px);font-weight:normal;line-height:1.15;margin:14px 0 18px}
+p{font-size:17px;line-height:1.75;color:#eaddec;margin:10px 0;max-width:390px}
+.small{font:12px/1.7 Arial,sans-serif;color:#c7b4d2;letter-spacing:.5px}
+button{border:1px solid #d9b8ff75;background:linear-gradient(120deg,#9d68dc,#d47da9);color:white;padding:14px 24px;border-radius:999px;font:600 12px Arial,sans-serif;letter-spacing:1.4px;text-transform:uppercase;box-shadow:0 8px 28px #a05bd54a;cursor:pointer;margin-top:24px}
+button:active{transform:scale(.97)}
+button.secondary{background:#ffffff0b;box-shadow:none;color:#f3dff5}
+.symbol{font-size:54px;filter:drop-shadow(0 0 22px #d99cff8a);margin:12px 0}
+.line{width:64px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:18px auto}
+.envelope{width:174px;height:124px;position:relative;margin:26px auto 10px;background:linear-gradient(145deg,#bd86d9,#754b9e);border-radius:9px;box-shadow:0 15px 40px #0006;overflow:hidden}
+.envelope:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,transparent 49%,#593875 50%) left/50% 100% no-repeat,linear-gradient(215deg,transparent 49%,#674184 50%) right/50% 100% no-repeat}
+.envelope:after{content:"";position:absolute;left:0;right:0;top:0;margin:auto;border-left:87px solid transparent;border-right:87px solid transparent;border-top:69px solid #d9a6e8;filter:drop-shadow(0 3px 2px #4a2d61)}
+.seal{position:absolute;z-index:2;left:50%;top:52%;transform:translate(-50%,-50%);width:31px;height:31px;border-radius:50%;background:#f1c6d9;color:#6b315c;display:grid;place-items:center;font-size:15px;box-shadow:0 2px 9px #3a1d4c}
+.constellation{width:230px;height:190px;position:relative;margin:15px auto}
+.constellation svg{width:100%;height:100%;overflow:visible}
+.constellation circle{fill:#ffe9bd;filter:drop-shadow(0 0 5px #ffdb9c)}
+.word{position:absolute;font:11px Arial,sans-serif;letter-spacing:1.2px;color:#f1d9f5}
+.w1{top:4px;left:8px}.w2{top:19px;right:0}.w3{bottom:17px;left:0}.w4{bottom:4px;right:8px}
+.pillars{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;max-width:370px;margin:16px 0}
+.pillar{border:1px solid #d4a9e533;background:#ffffff08;border-radius:16px;padding:15px 10px}
+.pillar b{display:block;color:#f5d5a0;font-size:14px;font-weight:normal;margin-bottom:6px}
+.pillar span{font:11px/1.5 Arial,sans-serif;color:#d8c5df}
+.letter{text-align:left;width:100%;max-width:390px}
+.letter p{font-size:16px;line-height:1.85}
+.signature{font-size:25px;color:#f5c5e2;font-style:italic;margin-top:20px}
+.progress{position:absolute;bottom:17px;left:0;right:0;font:10px Arial,sans-serif;letter-spacing:2px;color:#bba4c8}
+@media(max-height:700px){.page{min-height:calc(100svh - 30px);padding-top:22px;padding-bottom:30px}.symbol{font-size:42px}.constellation{height:150px}.page p{font-size:15px;line-height:1.6}}
+</style>
+</head>
+<body>
+<div id="stars"></div>
+<main>
+<section class="page active" id="p1">
+  <div class="eyebrow">a little something, made with love</div>
+  <div class="envelope"><div class="seal">♥</div></div>
+  <h1>For Sarauniya ta 💜</h1>
+  <div class="line"></div>
+  <p>Some feelings deserve more than a quick message. So today, I made you a little place of your own.</p>
+  <p class="small">Take your time. There is no rush here.</p>
+  <button onclick="go(2)">Open your little universe</button>
+  <div class="progress">01 — 04</div>
+</section>
+
+<section class="page" id="p2">
+  <div class="eyebrow">if my heart had a sky</div>
+  <h2>These are the things<br>that would shine in it.</h2>
+  <div class="constellation">
+    <svg viewBox="0 0 230 190" aria-hidden="true">
+      <path d="M34 42 L91 23 L137 72 L190 42 L164 132 L101 158 L34 42 M91 23 L101 158 M137 72 L34 42 M137 72 L164 132" fill="none" stroke="#d7b2ef" stroke-opacity=".58" stroke-width="1.2"/>
+      <circle cx="34" cy="42" r="4"/><circle cx="91" cy="23" r="3"/><circle cx="137" cy="72" r="5"/><circle cx="190" cy="42" r="3"/><circle cx="164" cy="132" r="4"/><circle cx="101" cy="158" r="3"/>
+    </svg>
+    <span class="word w1">YOUR SMILE</span><span class="word w2">YOUR HEART</span>
+    <span class="word w3">YOUR KINDNESS</span><span class="word w4">YOUR DREAMS</span>
+  </div>
+  <p>Not because you have to be perfect. Not because every day has to be easy.</p>
+  <p>Simply because you are you — and I am grateful that Allah allowed our paths to meet.</p>
+  <button onclick="go(3)">There's something I pray for</button>
+  <div class="progress">02 — 04</div>
+</section>
+
+<section class="page" id="p3">
+  <div class="eyebrow">a prayer from my heart</div>
+  <div class="symbol">☾</div>
+  <h2>May Allah be gentle<br>with your heart.</h2>
+  <p>May He protect you when I cannot be beside you, give you ease where life feels heavy, and place light in every path you take.</p>
+  <div class="pillars">
+    <div class="pillar"><b>For your heart</b><span>Sakīnah, happiness and peace.</span></div>
+    <div class="pillar"><b>For your health</b><span>Strength, healing and lasting wellness.</span></div>
+    <div class="pillar"><b>For your dreams</b><span>Goodness beyond what you imagine.</span></div>
+    <div class="pillar"><b>For our future</b><span>A halal path, made easy with barakah.</span></div>
+  </div>
+  <p class="small">Āmīn, yā Rabbal-‘ālamīn. 🤲</p>
+  <button onclick="go(4)">One last thing, my love</button>
+  <div class="progress">03 — 04</div>
+</section>
+
+<section class="page" id="p4">
+  <div class="eyebrow">just between you and me</div>
+  <div class="letter">
+    <h2>Sarauniya ta 💜</h2>
+    <div class="line" style="margin-left:0"></div>
+    <p>I may not have everything I dream of giving you today, but please never mistake that for a lack of intention.</p>
+    <p>I am working, making du'a, and asking Allah to make me ready to honour you properly. I don't want to promise you a perfect life; I want to keep choosing honesty, patience, effort and kindness as we work towards what is halal.</p>
+    <p>Until Allah writes the next chapter for us, I hope you never doubt this: you are appreciated, you are prayed for, and you are loved with a sincere heart.</p>
+    <p>May Allah make our steps towards Nikkah easy, bless what is good for us, and keep us close to Him first. Āmīn.</p>
+    <div class="signature">Always making du'a for you,<br>Muhammad</div>
+  </div>
+  <button class="secondary" onclick="go(1)">Read it again ♡</button>
+  <div class="progress">04 — 04</div>
+</section>
+</main>
+<script>
+const stars=document.getElementById('stars');
+for(let i=0;i<75;i++){const s=document.createElement('i');s.className='star';s.style.left=(Math.random()*100)+'%';s.style.top=(Math.random()*100)+'%';s.style.animationDelay=(Math.random()*4)+'s';s.style.opacity=(.2+Math.random()*.65);stars.appendChild(s)}
+function go(n){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById('p'+n).classList.add('active');window.scrollTo({top:0,behavior:'smooth'})}
+</script>
+</body>
+</html>
